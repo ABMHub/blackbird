@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background-color: #2d2d2d;
+    background-color: white;
 }
 header {
     display: flex;
@@ -8,7 +8,30 @@ header {
     margin: 0;
     padding-left: 20px;
     justify-content: space-between;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
 }
+main {
+    margin-top: 86px;
+    display: flex;
+    justify-content: end;
+    padding: 30px 100px;
+}
+footer {
+    background-color: black;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+/* Classes da header */
 .blackbird {
     font-weight: normal;
     font-size: 70px;
@@ -19,7 +42,7 @@ header {
 .birdimg {
     display: block;
     height: 60px;
-    margin: 13px 30px;
+    margin: 13px 20px;
 }
 .menu {
     color: white;
@@ -42,4 +65,14 @@ header {
 .menu a:hover {
     background-color: rgb(59, 59, 59);
     transition-duration: 300ms;
+}
+
+/* Classes da main */
+.perfil {
+    border-width: 0 2px 0 0 ;
+    border-style: solid;
+    width: 30%;
+}
+.corpo {
+    padding-left: 50px;
 }
