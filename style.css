@@ -17,7 +17,6 @@ header {
 main {
     margin-top: 86px;
     display: flex;
-    justify-content: end;
     padding: 30px 100px;
 }
 footer {
@@ -27,12 +26,13 @@ footer {
     text-align: center;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     position: fixed;
-    bottom: 0;
     right: 0;
+    bottom: 0;
     left: 0;
 }
 
 /* Classes da header */
+
 .blackbird {
     font-weight: normal;
     font-size: 70px;
@@ -72,7 +72,7 @@ footer {
 .perfil {
     border-width: 0 2px 0 0 ;
     border-style: solid;
-    width: 30%;
+    width: 400px;
     padding-right: 20px;
 }
 .perfil > input {
@@ -81,7 +81,7 @@ footer {
 .user {
     background-color: black;
     padding-top: 1px;
-    width: 80%;
+    width: 250px;
     margin: 10px auto;
     border-style: solid;
     border-color: grey;
@@ -104,15 +104,47 @@ footer {
     font-size: large;
     font-weight: bold;
 }
+.artigo {
+    background-color: grey;
+    padding: 7px;
+    margin: 10px;
+}
 .corpo {
     padding-left: 50px;
+    flex-wrap: wrap;
+    display: flex;
+}
+.artigoCorpo {
+    color: white;
+    background-color: black;
+    padding: 7px;
+    margin: 10px;
+    width: 400px;
+    height: min-content;
 }
 .titulo {
     font-size: 20px;
     font-weight: bolder;
 }
-.artigo {
-    background-color: grey;
-    padding: 7px;
-    margin: 10px;
+.tituloCorpo {
+    font-size: 50px;
+    font-weight: bolder;
+}
+.autor {
+    font-size: 20px;
+    color: #b8b8b8;
+}
+.icones {
+    text-align: right;
+    font-size: 20px;
+    padding-top: 10px;
+    position: relative;
+}
+.fa-heart:hover, .fa-retweet:hover {
+    background-color: white;
+    color: black;
+}
+i {
+    padding: 5px;
+    border-radius: 50%;
 }
