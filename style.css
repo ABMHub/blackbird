@@ -1,3 +1,5 @@
+/* LIGUE O CLOCKIFY LUCAS PELO AMOR DE DEUS */
+
 body {
     margin: 0;
     background-color: whitesmoke;
@@ -15,7 +17,7 @@ header {
     top: 0;
 }
 main {
-    margin-top: 86px;
+    margin: 86px 0;
     display: flex;
     padding: 30px 100px;
 }
@@ -72,11 +74,15 @@ footer {
 .perfil {
     border-width: 0 2px 0 0 ;
     border-style: solid;
-    width: 400px;
+    width: 300px;
     padding-right: 20px;
+    position: fixed;
+    top: 120px;
+    left: 100px;
 }
 .perfil > input {
-    width: 90%;
+    width: 200px;
+    margin-left: 40px;
 }
 .user {
     background-color: black;
@@ -85,6 +91,7 @@ footer {
     margin: 10px auto;
     border-style: solid;
     border-color: grey;
+    border-radius: 10px;
 }
 .foto {
     width: 100px;
@@ -99,7 +106,7 @@ footer {
     
 }
 .centro {
-    margin-top: 70px;
+    margin-top: 40px;
     text-align: center;
     font-size: large;
     font-weight: bold;
@@ -109,10 +116,19 @@ footer {
     padding: 7px;
     margin: 10px;
 }
+.global {
+    margin-left: 300px;
+}
 .corpo {
     padding-left: 50px;
     flex-wrap: wrap;
     display: flex;
+}
+.pg {
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding-left: 60px;
+    font-size: 50px;
 }
 .artigoCorpo {
     color: white;
@@ -121,6 +137,29 @@ footer {
     margin: 10px;
     width: 400px;
     height: min-content;
+    border-radius: 10px;
+}
+.artigoCorpo:hover {
+    background-color: #2d2d2d;
+}
+.artigoCorpo > img {
+    width: 390px;
+    height: 390px;
+    display: block;
+    border-radius: 7px;
+    margin: 5px auto;
+}
+.tags {
+    display: flex;
+}
+.t1 {
+    color: whitesmoke;
+}
+.tag {
+    background-color: grey;
+    color: black;
+    padding: 2px;
+    margin: 0 3px;
 }
 .titulo {
     font-size: 20px;
@@ -138,7 +177,17 @@ footer {
     text-align: right;
     font-size: 20px;
     padding-top: 10px;
-    position: relative;
+}
+.icones > button {
+    background-color: #2d2d2d;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    border: thin;
+}
+.icones > button:hover {
+    color: black;
+    background-color: whitesmoke;
 }
 .fa-heart:hover, .fa-retweet:hover {
     background-color: white;
