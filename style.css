@@ -24,13 +24,15 @@ main {
 footer {
     background-color: black;
     color: whitesmoke;
-    font-size: 50px;
+    font-size: 20px;
     text-align: center;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     position: fixed;
+    font-family: 'Times New Roman', Times, serif;
     right: 0;
     bottom: 0;
     left: 0;
+    height: 25px;
+    text
 }
 
 /* Classes da header */
@@ -106,7 +108,7 @@ footer {
     
 }
 .centro {
-    margin-top: 40px;
+    margin-top: 10px;
     text-align: center;
     font-size: large;
     font-weight: bold;
@@ -115,6 +117,31 @@ footer {
     background-color: grey;
     padding: 7px;
     margin: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.tagPerfil {
+    background-color: rgb(80, 80, 80);
+    color: whitesmoke;
+    padding: 3px;
+    margin: 0 3px;
+    border-radius: 5px;
+}
+.iconesPerfil > button {
+    background-color: rgb(80, 80, 80);
+    color: whitesmoke;
+    border-radius: 10px;
+    font-weight: bold;
+    border: thin;
+}
+.iconesPerfil > button:hover {
+    color: grey;
+    background-color: black;
+}
+.iconesPerfil {
+    padding: 5px;
+    text-align: right;
+    
 }
 .global {
     margin-left: 300px;
@@ -138,9 +165,7 @@ footer {
     width: 400px;
     height: min-content;
     border-radius: 10px;
-}
-.artigoCorpo:hover {
-    background-color: #2d2d2d;
+    overflow: hidden;
 }
 .artigoCorpo > img {
     width: 390px;
@@ -158,8 +183,9 @@ footer {
 .tag {
     background-color: grey;
     color: black;
-    padding: 2px;
+    padding: 3px;
     margin: 0 3px;
+    border-radius: 5px;
 }
 .titulo {
     font-size: 20px;
@@ -189,9 +215,15 @@ footer {
     color: black;
     background-color: whitesmoke;
 }
-.fa-heart:hover, .fa-retweet:hover {
+.iconesPerfil > .fa-heart:hover, .iconesPerfil > .fa-retweet:hover {
+    background-color: black;
+    color: grey;
+    transition-duration: 200ms;
+}
+.icones > .fa-heart:hover, .icones > .fa-retweet:hover {
     background-color: white;
     color: black;
+    transition-duration: 200ms;
 }
 i {
     padding: 5px;
